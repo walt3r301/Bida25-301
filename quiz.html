@@ -4,6 +4,10 @@
 
 <head> 
 
+
+
+<link rel="stylesheet" href="styles.css"> 
+
     <meta charset="UTF-8"> 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -13,6 +17,12 @@
 </head> 
 
 <body> 
+
+  <header>
+    <h1>THE SKIN PALACE</h1> 
+     <img src="C:\Users\user\OneDrive - Botswana Accountancy College\Bida301-web-assig\company.logo.png" 
+     alt="Company logo" width="100"> 
+  </header> 
 
 <nav> 
     
@@ -29,63 +39,110 @@
     <a href="feedback.html">Feedback</a> 
 
 </nav>
-<header> 
-    
- <h1>Skin Quiz</h1>
 
+<header>   
+ <h2>Skin Quiz</h2> 
+ <p>Take this quick quiz to better understand your skin!</p> 
 </header> 
-<form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
- 
-  <div class="fs-field">
-    <label class="fs-label" for="score-reason">
-      What is the primary reason for your score?
-    </label>
 
-    <textarea
-      class="fs-textarea"
-      id="score-reason"
-      name="score-reason"
-      placeholder="Explain why you gave us this score"
-      required
-    ></textarea>
-  </div>
+<!-- Question 1 -->
+<p>1. How does your skin feel after washing?</p>
+<input type="radio" name="q1" value="dry"> Dry<br>
+<input type="radio" name="q1" value="oily"> Oily<br>
+<input type="radio" name="q1" value="combo"> Combination<br>
+<input type="radio" name="q1" value="normal"> Normal<br>
 
-  <div class="fs-field">
-    <label class="fs-label" for="improvement-suggestion">
-      What could we do to improve your experience?
-    </label>
+<!-- Question 2 -->
+<p>2. How often do you get breakouts?</p>
+<input type="radio" name="q2" value="oily"> Often<br>
+<input type="radio" name="q2" value="dry"> Rarely<br>
+<input type="radio" name="q2" value="combo"> Sometimes<br>
+<input type="radio" name="q2" value="normal"> Not at all<br>
 
-    <textarea
-      class="fs-textarea"
-      id="improvement-suggestion"
-      name="improvement-suggestion"
-      placeholder="Let us know what we can improve (optional)"
-    ></textarea>
-  </div>
+<!-- Question 3 -->
+<p>3. How does your skin look during the day?</p>
+<input type="radio" name="q3" value="oily"> Shiny<br>
+<input type="radio" name="q3" value="dry"> Dull<br>
+<input type="radio" name="q3" value="combo"> Mixed<br>
+<input type="radio" name="q3" value="normal"> Just fine<br>
 
-  <div class="fs-field">
-    <label class="fs-label" for="positive-feedback">What did we do well?</label>
-    <textarea
-      class="fs-textarea"
-      id="positive-feedback"
-      name="positive-feedback"
-      placeholder="Tell us what worked well for you (optional)"
-    ></textarea>
-  </div>
 
-</form>
+<!-- Question 4 -->
+<p>4. How would you describe your pores?</p>
+<input type="radio" name="q4" value="oily"> Large and Visible<br>
+<input type="radio" name="q4" value="dry"> Small and Tight<br>
+<input type="radio" name="q4" value="combo"> Large in the T-zone area<br>
+<input type="radio" name="q4" value="normal"> Barely noticeable<br>
+
+
+<!-- Question 5 -->
+<p>5. What happens when you skip/forget to moisturize?</p>
+<input type="radio" name="q5" value="oily"> My skin gets more oilier<br>
+<input type="radio" name="q5" value="dry"> My skin feels tight and flaky<br>
+<input type="radio" name="q5" value="combo"> Only some areas fel dry<br>
+<input type="radio" name="q5" value="normal"> My skin feels just fine but can feel that something is missing<br>
+
+
+<!-- Question 6 -->
+<p>6. How does your skin react to new products?</p>
+<input type="radio" name="q6" value="oily"> I often breakout<br>
+<input type="radio" name="q6" value="dry"> I get irritation and dryness<br>
+<input type="radio" name="q6" value="combo"> Only certain areas react<br>
+<input type="radio" name="q6" value="normal">It handles them well<br>
+
+
+
+<!-- Question 7 -->
+<p>7. How would you describe your skin texture?</p>
+<input type="radio" name="q7" value="oily"> Shiny and Greasy<br>
+<input type="radio" name="q7" value="dry"> Rough and Flaky<br>
+<input type="radio" name="q7" value="combo"> Mixted texture<br>
+<input type="radio" name="q7" value="normal"> Smooth and even<br>
+
+
+
+<!-- Question 8 -->
+<p>8. How does your skin look and feel like at the end of the day?</p>
+<input type="radio" name="q8" value="oily"> Very Shiny<br>
+<input type="radio" name="q8" value="dry"> Dry and Dull<br>
+<input type="radio" name="q8" value="combo"> Mixed<br>
+<input type="radio" name="q8" value="normal"> Still balanced<br>
+
+
+
+<!-- Question 9 -->
+<p>9. How sensitive is your skin?</p>
+<input type="radio" name="q9" value="oily"> Not very sensitive<br>
+<input type="radio" name="q9" value="dry"> Very sensitive<br>
+<input type="radio" name="q9" value="combo"> sensitive in some areas<br>
+<input type="radio" name="q9" value="normal"> Slightly sensitive<br>
+
+
+
+<!-- Question 10 -->
+<p>10. Whatis your biggest skin concern ?</p>
+<input type="radio" name="q10" value="oily"> Breakouts<br>
+<input type="radio" name="q10" value="dry"> Dryness<br>
+<input type="radio" name="q10" value="combo"> Mix of dryness, spots and breakouts<br>
+<input type="radio" name="q10" value="normal"> None<br>
+
+
+
+<br><br>
+
+<button onclick="showResult()">Submit</button>
+
+<p id="result"></p>
 
 <footer> 
-
-     <p>&copy; 2026 Skin Awarness</p>  
-
+<hr>
+     <p>&copy; 2026 Skin Palace | Skin Awarness Project</p>  
+    <p>&copy; All copyrights reserved</p> 
+    <p>Helping you understand and care for your skin better</p>
 </footer>
 
+
+ <script src="script.js"></script>
 </body> 
 
 </html> 
