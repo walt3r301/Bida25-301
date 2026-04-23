@@ -16,28 +16,36 @@
 
 <body> 
 
- <header>
-     <img src="C:\Users\user\OneDrive - Botswana Accountancy College\Bida301-web-assig\images\company.logo.png"
-     alt="Company logo"> 
-    <h1>THE SKIN PALACE</h1>
-    <p>Where skin health matters!</p> 
-  </header>
-
 <nav> 
+    <div class="logo">
+<img src="company.logo.jpg"> </div>
 
-    <a href="index.html"><span>Home</span></a> 
+<ul id="menulist">
 
-    <a href="about.html"><span>About</span></a> 
+   <li><a href="index.html">Home</a></li> 
 
-    <a href="problems.html"><span>Problems</span></a> 
+    <li><a href="about.html">About</a></li> 
 
-    <a href="routine.html"><span>Routines</span></a> 
+    <li><a href="problems.html">Problems</a></li>
 
-    <a href="quiz.html"><span>Quiz</span></a> 
+    <li><a href="routine.html">Routines</a></li>
 
-    <a href="feedback.html"><span>Feedback</span></a> 
+    <li><a href="quiz.html">Quiz</a></li> 
 
+    <li><a href="feedback.html" class="active">Feedback</a></li> 
+</ul>
+
+   <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+   </div>
 </nav> 
+
+ <header>
+    <h1>THE SKIN PALACE</h1>
+   
+    <p>Where skin health matters!</p> 
+    </header>
  
 
  <h2>Contact Us</h2>
@@ -56,10 +64,11 @@
             Reach out to us on the below provided email
             and we'll gladly get back to you as soon as possible.
         </p>
+
         <div> 
     <h3>Email</h3>
-    <a href="https://email.com/yourusername">@someonegmail.com</a>
-<p>We respond within 24 hours</p>
+    <p><a href="https://email.com/yourusername">@someonegmail.com</a>.
+    We respond within 24 hours</p>
         </div> 
 
          
@@ -70,12 +79,12 @@
                 routines and upadtes on our social media pages.
             </p>
             
-                <a href="https://Instagram.com/yourusername">Instagram</a> | 
+            <p><a href="https://Instagram.com/yourusername">Instagram</a> | 
 
                 <a href="https://Tiktok.com/in/yourusername">TikTok</a> | 
 
                 <a href="https://twitter.com/yourusername">Twitter</a> 
-
+            </p>
 
         </div> 
 
@@ -102,6 +111,7 @@
         <p>Would you share and inform the others about us?</p>
         <form action=https://formspree.io/f/mnjlvrgy method="POST"> 
 
+            <div class="feedback">
             <div> 
 
                 <label for="name">Your Name:</label><br> 
@@ -128,7 +138,7 @@
 
                 <textarea id="message" name="message" rows="5" cols="30" required></textarea> 
 
-            </div> 
+            </p1></div> 
 
             <br> 
 
@@ -136,6 +146,7 @@
 
         </form>
 
+  </div>
   </div>
     </section> 
 
@@ -151,6 +162,9 @@
 
 
  <script src="script.js"></script>
+
+  <script src="https://kit.fontawesome.com/0ecc9d47a7.js" 
+ crossorigin="anonymous"></script>
 
 </body> 
 

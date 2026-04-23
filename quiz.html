@@ -16,113 +16,123 @@
 
 <body> 
 
-  <header>
-     <img src="C:\Users\user\OneDrive - Botswana Accountancy College\Bida301-web-assig\images\company.logo.png"
-     alt="Company logo"> 
-    <h1>THE SKIN PALACE</h1>
-    <p>Where skin health matters!</p> 
-  </header>
-
+ 
 <nav> 
-    
+    <div class="logo">
+<img src="company.logo.jpg"> </div>
+
+<ul id="menulist">
+
+   <li><a href="index.html">Home</a></li> 
+
+    <li><a href="about.html">About</a></li> 
+
+    <li><a href="problems.html">Problems</a></li>
+
+    <li><a href="routine.html">Routines</a></li>
+
+    <li><a href="quiz.html" class="active">Quiz</a></li> 
+
+    <li><a href="feedback.html">Feedback</a></li> 
+</ul>
+
+   <div class="menu-icon">
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+   </div>
+</nav> 
+
+
+
+ <header>
+    <h1>THE SKIN PALACE</h1>
    
-    <a href="index.html"><span>Home</span></a> 
-
-    <a href="about.html"><span>About</span></a> 
-
-    <a href="problems.html"><span>Problems</span></a> 
-
-    <a href="routine.html"><span>Routines</span></a> 
-
-    <a href="quiz.html"><span>Quiz</span></a> 
-
-    <a href="feedback.html"><span>Feedback</span></a> 
-
-</nav>
+    <p>Where skin health matters!</p> 
+    </header>
   
  <h2>Skin Quiz</h2> 
  <p>Take this quick quiz to better understand your skin!</p> 
 
 
 <!-- Question 1 -->
-<p><b> How does your skin feel after washing?</b></p>
-<input type="radio" name="q1" value="dry"> Dry<br>
+<p><b>1. How does your skin feel after washing?</b></p>
+<p><input type="radio" name="q1" value="dry"> Dry<br>
 <input type="radio" name="q1" value="oily"> Oily<br>
 <input type="radio" name="q1" value="combo"> Combination<br>
-<input type="radio" name="q1" value="normal"> Normal<br>
+<input type="radio" name="q1" value="normal"> Normal<br></p>
 
 <!-- Question 2 -->
 <p><b>2. How often do you get breakouts?</b></p>
-<input type="radio" name="q2" value="oily"> Often<br>
+<p><input type="radio" name="q2" value="oily"> Often<br>
 <input type="radio" name="q2" value="dry"> Rarely<br>
 <input type="radio" name="q2" value="combo"> Sometimes<br>
-<input type="radio" name="q2" value="normal"> Not at all<br>
+<input type="radio" name="q2" value="normal"> Not at all<br></p>
 
 <!-- Question 3 -->
 <p><b>3. How does your skin look during the day?</b></p>
-<input type="radio" name="q3" value="oily"> Shiny<br>
+<p><input type="radio" name="q3" value="oily"> Shiny<br>
 <input type="radio" name="q3" value="dry"> Dull<br>
 <input type="radio" name="q3" value="combo"> Mixed<br>
-<input type="radio" name="q3" value="normal"> Just fine<br>
+<input type="radio" name="q3" value="normal"> Just fine<br></p>
 
 
 <!-- Question 4 -->
 <p><b>4. How would you describe your pores?</b></p>
-<input type="radio" name="q4" value="oily"> Large and Visible<br>
+<p><input type="radio" name="q4" value="oily"> Large and Visible<br>
 <input type="radio" name="q4" value="dry"> Small and Tight<br>
 <input type="radio" name="q4" value="combo"> Large in the T-zone area<br>
-<input type="radio" name="q4" value="normal"> Barely noticeable<br>
+<input type="radio" name="q4" value="normal"> Barely noticeable<br></p>
 
 
 <!-- Question 5 -->
 <p><b>5. What happens when you skip/forget to moisturize?</b></p>
-<input type="radio" name="q5" value="oily"> My skin gets more oilier<br>
+<p><input type="radio" name="q5" value="oily"> My skin gets more oilier<br>
 <input type="radio" name="q5" value="dry"> My skin feels tight and flaky<br>
 <input type="radio" name="q5" value="combo"> Only some areas fel dry<br>
-<input type="radio" name="q5" value="normal"> My skin feels just fine but can feel that something is missing<br>
+<input type="radio" name="q5" value="normal"> My skin feels just fine but can feel that something is missing<br></p>
 
 
 <!-- Question 6 -->
 <p><b>6. How does your skin react to new products?</b></p>
-<input type="radio" name="q6" value="oily"> I often breakout<br>
+<p><input type="radio" name="q6" value="oily"> I often breakout<br>
 <input type="radio" name="q6" value="dry"> I get irritation and dryness<br>
 <input type="radio" name="q6" value="combo"> Only certain areas react<br>
-<input type="radio" name="q6" value="normal">It handles them well<br>
+<input type="radio" name="q6" value="normal">It handles them well<br></p>
 
 
 
 <!-- Question 7 -->
 <p><b>7. How would you describe your skin texture?</b></p>
-<input type="radio" name="q7" value="oily"> Shiny and Greasy<br>
+<p><input type="radio" name="q7" value="oily"> Shiny and Greasy<br>
 <input type="radio" name="q7" value="dry"> Rough and Flaky<br>
 <input type="radio" name="q7" value="combo"> Mixted texture<br>
-<input type="radio" name="q7" value="normal"> Smooth and even<br>
+<input type="radio" name="q7" value="normal"> Smooth and even<br></p>
 
 
 
 <!-- Question 8 -->
 <p><b>8. How does your skin look and feel like at the end of the day?</b></p>
-<input type="radio" name="q8" value="oily"> Very Shiny<br>
+<p><input type="radio" name="q8" value="oily"> Very Shiny<br>
 <input type="radio" name="q8" value="dry"> Dry and Dull<br>
 <input type="radio" name="q8" value="combo"> Mixed<br>
-<input type="radio" name="q8" value="normal"> Still balanced<br>
+<input type="radio" name="q8" value="normal"> Still balanced<br></p>
 
 
 
 <!-- Question 9 -->
 <p><b>9. How sensitive is your skin?</b></p>
-<input type="radio" name="q9" value="oily"> Not very sensitive<br>
+<p><input type="radio" name="q9" value="oily"> Not very sensitive<br>
 <input type="radio" name="q9" value="dry"> Very sensitive<br>
 <input type="radio" name="q9" value="combo"> sensitive in some areas<br>
-<input type="radio" name="q9" value="normal"> Slightly sensitive<br>
+<input type="radio" name="q9" value="normal"> Slightly sensitive<br></p>
 
 
 <!-- Question 10 -->
 <p><b>10. What is your biggest skin concern ?</b></p>
-<input type="radio" name="q10" value="oily"> Breakouts<br>
+<p><input type="radio" name="q10" value="oily"> Breakouts<br>
 <input type="radio" name="q10" value="dry"> Dryness<br>
 <input type="radio" name="q10" value="combo"> Mix of dryness, spots and breakouts<br>
-<input type="radio" name="q10" value="normal"> None<br>
+<input type="radio" name="q10" value="normal"> None<br></p>
 
 
 
@@ -141,6 +151,9 @@
 
 
  <script src="script.js"></script>
+
+  <script src="https://kit.fontawesome.com/0ecc9d47a7.js" 
+ crossorigin="anonymous"></script>
  
 </body> 
 
