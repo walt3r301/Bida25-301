@@ -11,6 +11,7 @@ body {
     padding: 0; 
     box-sizing: border-box;
 } 
+
 .quiz-container {
     background-image: url("quizback.png");
         background-size: cover;
@@ -31,6 +32,21 @@ header {
     text-align: center; 
 
 } 
+#typing-headline { 
+     font-family: BROPELLA;
+    min-height: 80px; 
+    border-right: 3px solid #4CAF50; 
+    display: inline-block; 
+    animation: blink 0.75s step-end infinite; 
+
+} 
+
+@keyframes blink { 
+    from, to { border-color: transparent; } 
+    50% { border-color: #200239; } 
+
+}
+
 h1 {
     font-family: BROPELLA;
     font-weight: 700;
@@ -137,7 +153,7 @@ nav a:hover {
         overflow: hidden;
     }
     nav ul li{
-        padding: 8px;
+        padding: 2px;
     }
     .menu-icon{
         display: block;
