@@ -213,3 +213,9 @@ button:hover {
     color: #ffffff;
     transform: scale(1.05);
 }
+
+ul {
+    list-style-type: square;
+    margin: 10px 40px;
+    padding: 10px 40px;
+}
