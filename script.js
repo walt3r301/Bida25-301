@@ -247,6 +247,39 @@ function typeEffect() {
 
 } 
 
- 
-
 typeEffect(); 
+
+/*********dark mode*********/
+
+
+const toggleButton = document.getElementById("theme-toggle");
+
+// CHECK SAVED THEME
+let savedTheme = localStorage.getItem("theme");
+
+// LOAD SAVED THEME
+if(savedTheme === "dark"){
+    document.body.classList.add("dark-mode");
+    toggleButton.innerHTML = "Light Mode";
+}
+
+// BUTTON CLICK
+toggleButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    // SAVE THEME
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme", "dark");
+
+        toggleButton.innerHTML = "Light Mode";
+
+    } else {
+
+        localStorage.setItem("theme", "light");
+
+        toggleButton.innerHTML = "Dark Mode";
+    }
+
+});

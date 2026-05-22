@@ -219,3 +219,17 @@ ul {
     margin: 10px 40px;
     padding: 10px 40px;
 }
+
+/* DARK MODE */
+
+body.dark-mode {
+    color: white;
+    background-color: #121212;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("lavender-background.avif") ,
+    url("quizback.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
